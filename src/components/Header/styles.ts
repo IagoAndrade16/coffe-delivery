@@ -123,7 +123,7 @@ export const LocationCity = styled.span`
   flex-grow: 0;
 `
 
-export const Cart = styled.div`
+export const Cart = styled.button`
   /* Cart */
 
   /* Auto layout */
@@ -135,8 +135,8 @@ export const Cart = styled.div`
   padding: 8px;
   gap: 4px;
 
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
 
   /* Brand/Yellow Light */
 
@@ -148,4 +148,7 @@ export const Cart = styled.div`
   flex: none;
   order: 1;
   flex-grow: 0;
+  border: none;
+
+  cursor: pointer;
 `

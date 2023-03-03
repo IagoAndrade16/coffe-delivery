@@ -27,7 +27,7 @@ export function Header() {
             <LocationCity>Porto Alegre, RJ</LocationCity>
           </Location>
           <Cart>
-            <ShoppingCartSimple size={24} color="#C47F17" />
+            <ShoppingCartSimple size={24} weight="fill" color="#C47F17" />
           </Cart>
         </Actions>
       </NavBar>

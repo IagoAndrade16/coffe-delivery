@@ -1,12 +1,6 @@
 import { Coffee, Package, ShoppingCartSimple, Timer } from 'phosphor-react'
+import { Coffees } from './components/Coffees/Coffees'
 import {
-  CoffeCard,
-  CoffeCardBuy,
-  CoffeCardBuyActions,
-  CoffeCardBuyActionsCounter,
-  CoffeCardBuyText,
-  CoffeeList,
-  CoffeeListTitle,
   Intro,
   IntroImage,
   IntroTitle,
@@ -66,18 +60,7 @@ export function Home() {
         </Items>
       </Intro>
 
-      <CoffeeList>
-        <CoffeeListTitle>Nossos cafés</CoffeeListTitle>
-
-        <CoffeCard>
-          <CoffeCardBuy>
-            <CoffeCardBuyText>R$9,90</CoffeCardBuyText>
-            <CoffeCardBuyActions>
-              <CoffeCardBuyActionsCounter></CoffeCardBuyActionsCounter>
-            </CoffeCardBuyActions>
-          </CoffeCardBuy>
-        </CoffeCard>
-      </CoffeeList>
+      <Coffees />
     </div>
   )
 }

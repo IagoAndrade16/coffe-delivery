@@ -1,5 +1,6 @@
 import { AdressForm } from './components/AdressForm'
 import { PaymentMethod } from './components/PaymentMethod'
+import { SelectedCoffees } from './components/SelectedCoffees'
 import { CompleteOrder } from './styles'
 
 export function ShoppingCart() {
@@ -8,6 +9,7 @@ export function ShoppingCart() {
       <span>Complete seu pedido</span>
       <AdressForm />
       <PaymentMethod />
+      <SelectedCoffees />
     </CompleteOrder>
   )
 }

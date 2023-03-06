@@ -4,7 +4,7 @@ export const CompleteOrder = styled.div`
   position: absolute;
   width: 200px;
   height: 23px;
-  left: 160px;
+  left: 300px;
   top: 144px;
 
   /* Title/Title XS */

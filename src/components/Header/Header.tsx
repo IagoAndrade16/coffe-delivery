@@ -7,6 +7,7 @@ import {
   Logo,
   NavBar,
 } from './styles'
+import { NavLink } from 'react-router-dom'
 
 import { MapPin, ShoppingCartSimple } from 'phosphor-react'
 
@@ -14,9 +15,11 @@ export function Header() {
   return (
     <nav>
       <NavBar>
-        <Logo>
-          <img src="../../../assets/coffe-delivery-logo.svg" alt="" />
-        </Logo>
+        <NavLink to="/">
+          <Logo>
+            <img src="../../../assets/coffe-delivery-logo.svg" alt="" />
+          </Logo>
+        </NavLink>
 
         <Actions>
           <Location>
@@ -26,9 +29,11 @@ export function Header() {
 
             <LocationCity>Porto Alegre, RJ</LocationCity>
           </Location>
-          <Cart>
-            <ShoppingCartSimple size={24} weight="fill" color="#C47F17" />
-          </Cart>
+          <NavLink to="/shopping-cart">
+            <Cart>
+              <ShoppingCartSimple size={24} weight="fill" color="#C47F17" />
+            </Cart>
+          </NavLink>
         </Actions>
       </NavBar>
     </nav>
